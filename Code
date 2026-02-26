@@ -1,0 +1,86 @@
+import random
+
+# Definition of variables
+table1 = []
+table2 = []
+table3 = []
+table4 = []
+table5 = []
+table6 = []
+
+classList = ["Andrew", "Caleb", "Tyler", "Alex", "Brandon", "Dylan", "Wes", "Martins", "Abraham", "Chris", "Steve", "John", "Matthew", "Tiana", "Envy", "George", "Joey", "Greg", "Addy", "Dequavius"]
+
+tableNumber = 1
+
+student1 = None
+student2 = None
+
+# Logic function that runs if there is an exception.
+
+# Takes the name of the first student, checks if that student's name is in classList, and adds it to Table 1.
+def exceptions():
+  print("Enter the name of the first student:")
+  student1 = input()
+  if student1 in classList:
+    classList.remove(student1)
+    table1.append(student1)
+  else:
+    print("Student not found. Select a name from the list")
+    student1 = input()
+ 
+  # Takes the name of the second student, checks if that student's name is in classList, and adds it to Table 2.
+  print("Enter the name of the second student:")
+  student2 = input()
+  if student2 in classList:
+    classList.remove(student2)
+    table2.append(student2)
+    tableNumber = 3
+  else:
+    print("Student not found. Select a name from the list")
+    student2 = input()
+
+# Prints program name, classList, and asks if any exceptions should be taken into account.
+print('Group Maker 3000')
+print("\n")
+print("The students in this class are: ")
+print(classList)
+
+# Exceptions (two students cannot be in the same table together)
+print("Is there an exception? (Y/N)")
+exception = input()
+
+if exception == "Y" or exception == "y":
+  exceptions()
+if exception == "N" or exception == "n":
+  print("No exceptions")
+
+
+randomPick = []
+# Randomly assigns student names to tables, removes assigned names until all names are assigned.
+while len(classList) > 0:
+  randomPick = random.choice(classList)
+  if tableNumber == 1:
+    table1.append(randomPick)
+  if tableNumber == 2:
+    table2.append(randomPick)
+  if tableNumber == 3:
+    table3.append(randomPick)
+  if tableNumber == 4:
+    table4.append(randomPick)
+  if tableNumber == 5:
+    table5.append(randomPick)
+  if tableNumber == 6:
+    table6.append(randomPick)
+  classList.remove(randomPick)
+  tableNumber = tableNumber + 1
+  if tableNumber == 7:
+    tableNumber = 1
+
+
+# Prints the tables
+print("Table 1: ", table1)
+print("Table 2: ", table2)
+print("Table 3: ", table3)
+print("Table 4: ", table4)
+print("Table 5: ", table5)
+print("Table 6: ", table6)
