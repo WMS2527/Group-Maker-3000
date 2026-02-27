@@ -1,6 +1,5 @@
 import random
 
-
 # Definition of variables
 table1 = []
 table2 = []
@@ -9,19 +8,14 @@ table4 = []
 table5 = []
 table6 = []
 
-
 classList = []
 
-
 tableNumber = 1
-
 
 student1 = None
 student2 = None
 
-
 # Logic function that runs if there is an exception.
-
 
 # Takes the name of the first student, checks if that student's name is in classList, and adds it to Table 1.
 def exceptions():
@@ -45,34 +39,27 @@ def exceptions():
     print("Student not found. Select a name from the list")
     student2 = input()
 
-
 # Prints program name, classList, and asks if any exceptions should be taken into account.
 print('Group Maker 3000')
-print("\n")
-print("What are the names of the students in this class? (Enter names one at a time, then enter 'done')")
-
+print("What are the names of the students in this class? (Enter names one at a time or seperated by spaces, then enter 'done')")
 
 # Collects student names until 'done' is entered
 while True:
-  student = input()
-  if student == "done":
+  student = input().split(',')
+  if student == ["done"]:
     break
-  classList.append(student)
-
+  classList.extend(student)
 
 print("The students in this class are: ", classList)
-
 
 # Exceptions (two students cannot be in the same table together)
 print("Is there an exception? (Y/N)")
 exception = input()
 
-
 if exception == "Y" or exception == "y":
   exceptions()
 if exception == "N" or exception == "n":
   print("No exceptions")
-
 
 randomPick = []
 # Randomly assigns student names to tables, removes assigned names until all names are assigned.
@@ -94,7 +81,6 @@ while len(classList) > 0:
   tableNumber = tableNumber + 1
   if tableNumber == 7:
     tableNumber = 1
-
 
 # Prints the tables
 print("Table 1: ", table1)
