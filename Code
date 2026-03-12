@@ -41,13 +41,11 @@ def exceptions():
 
 # Prints program name, classList, and asks if any exceptions should be taken into account.
 print('Group Maker 3000')
-print("What are the names of the students in this class? (Enter names one at a time or seperated by spaces, then enter 'done')")
+print("What are the names of the students in this class? (Type every student's name, then press Enter)")
 
 # Collects student names until 'done' is entered
 while True:
   student = input().split(',')
-  if student == ["done"]:
-    break
   classList.extend(student)
 
 print("The students in this class are: ", classList)
