@@ -47,6 +47,7 @@ print("What are the names of the students in this class? (Type every student's n
 while True:
   student = input().split(',')
   classList.extend(student)
+  break
 
 print("The students in this class are: ", classList)
 
