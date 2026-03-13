@@ -15,6 +15,11 @@ tableNumber = 1
 student1 = None
 student2 = None
 
+# Function for group size
+def sizeSelect():
+    if sizeChoice == "3":
+        
+
 # Logic function that runs if there is an exception.
 
 # Takes the name of the first student, checks if that student's name is in classList, and adds it to Table 1.
@@ -50,6 +55,9 @@ while True:
   break
 
 print("The students in this class are: ", classList)
+
+print("How many students should be in each group? (2, 3, or 4)")
+sizeChoice == input()
 
 # Exceptions (two students cannot be in the same table together)
 print("Is there an exception? (Y/N)")
