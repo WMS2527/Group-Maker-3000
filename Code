@@ -15,11 +15,6 @@ tableNumber = 1
 student1 = None
 student2 = None
 
-# Function for group size
-def sizeSelect():
-    if sizeChoice == "3":
-        
-
 # Logic function that runs if there is an exception.
 
 # Takes the name of the first student, checks if that student's name is in classList, and adds it to Table 1.
@@ -91,6 +86,11 @@ while len(classList) > 0:
 
 # Prints the tables
 print("Table 1: ", table1)
+print("Table 2: ", table2)
+print("Table 3: ", table3)
+print("Table 4: ", table4)
+print("Table 5: ", table5)
+print("Table 6: ", table6)
 print("Table 2: ", table2)
 print("Table 3: ", table3)
 print("Table 4: ", table4)
