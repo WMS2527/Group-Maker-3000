@@ -76,17 +76,6 @@ def groupSize():
             tableNumber = tableNumber + 1
             if tableNumber == 11:
                 tableNumber = 1
-            
-        print ("Table 1:" , table1)
-        print ("Table 2:" , table2)
-        print ("Table 3:" , table3)
-        print ("Table 4:" , table4)
-        print ("Table 5:" , table5)
-        print ("Table 6:" , table6)
-        print ("Table 7:" , table7)
-        print ("Table 8:" , table8)
-        print ("Table 9:" , table9)
-        print ("Table 10:" , table10)
     
     elif sizeChoice == 3:
         
@@ -109,12 +98,12 @@ def groupSize():
             if tableNumber == 7:
                 tableNumber = 1
         
-        print ("Table 1:" , table1)
-        print ("Table 2:" , table2)
-        print ("Table 3:" , table3)
-        print ("Table 4:" , table4)
-        print ("Table 5:" , table5)
-        print ("Table 6:" , table6)
+    print ("Table 1:" , table1)
+    print ("Table 2:" , table2)
+    print ("Table 3:" , table3)
+    print ("Table 4:" , table4)
+    print ("Table 5:" , table5)
+    print ("Table 6:" , table6)
         
     elif sizeChoice == 4:
         
@@ -135,11 +124,11 @@ def groupSize():
             if tableNumber == 6:
                 tableNumber = 1
                 
-        print ("Table 1:" , table1)
-        print ("Table 2:" , table2)
-        print ("Table 3:" , table3)
-        print ("Table 4:" , table4)
-        print ("Table 5:" , table5)
+    print ("Table 1:" , table1)
+    print ("Table 2:" , table2)
+    print ("Table 3:" , table3)
+    print ("Table 4:" , table4)
+    print ("Table 5:" , table5)
 
 # Prints program name, assings values to classList, asks how many students should be in each group, and asks if any exceptions should be taken into account.
 print('Group Maker 3000')
@@ -167,3 +156,30 @@ if exception == "N" or exception == "n":
 
 # Randomly assigns student names to tables depending on sizeChoice, removes assigned names until all names are assigned.
 groupSize()
+
+if sizeChoice = 2:
+    print ("Table 1:" , table1)
+    print ("Table 2:" , table2)
+    print ("Table 3:" , table3)
+    print ("Table 4:" , table4)
+    print ("Table 5:" , table5)
+    print ("Table 6:" , table6)
+    print ("table 7:" , table7)
+    print ("table 8:" , table8)
+    print ("table 9:" , table9)
+    print ("table 10:" , table10)
+
+if sizeChoice = 3:
+    print ("Table 1:" , table1)
+    print ("Table 2:" , table2)
+    print ("Table 3:" , table3)
+    print ("Table 4:" , table4)
+    print ("Table 5:" , table5)
+    print ("Table 6:" , table6)
+    
+if sizeChoice = 4:
+    print ("Table 1:" , table1)
+    print ("Table 2:" , table2)
+    print ("Table 3:" , table3)
+    print ("Table 4:" , table4)
+    print ("Table 5:" , table5)
