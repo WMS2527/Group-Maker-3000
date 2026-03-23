@@ -37,13 +37,97 @@ def exceptions():
     
 # Function to set max group sizes
 def groupSize():
-    table1[]
-    table2[]
-    table3[]
     if sizeChoice == 2:
+        table1=[]
+        table2=[]
+        table3=[]
+        table4=[]
+        table5=[]
+        table6=[]
+        table7=[]
+        table8=[]
+        table9=[]
+        table10=[]
         
+        while len(classList) > 0:
+            randomPick = random.choice(classList)
+            if tableNumber == 1:
+                table1.append(randomPick)
+            if tableNumber == 2:
+                table2.append(randomPick)
+            if tableNumber == 3:
+                table3.append(randomPick)
+            if tableNumber == 4:
+                table4.append(randomPick)
+            if tableNumber == 5:
+                table5.append(randomPick)
+            if tableNumber == 6:
+                table6.append(randomPick)
+            if tableNumber == 7:
+                table7.append(randomPick)
+            if tableNumber == 8:
+                table8.append(randomPick)
+            if tableNumber == 9:
+                table9.append(randomPick)
+            if tableNumber == 10:
+                table10.append(randomPick)
+            classList.remove(randomPick)
+            tableNumber = tableNumber + 1
+            if tableNumber == 11:
+                tableNumber = 1
+    
+    elif sizeChoice == 3:
+        table1=[]
+        table2=[]
+        table3=[]
+        table4=[]
+        table5=[]
+        table6=[]
+        
+        while len(classList) > 0:
+            randomPick = random.choice(classList)
+            if tableNumber == 1:
+                table1.append(randomPick)
+            if tableNumber == 2:
+                table2.append(randomPick)
+            if tableNumber == 3:
+                table3.append(randomPick)
+            if tableNumber == 4:
+                table4.append(randomPick)
+            if tableNumber == 5:
+                table5.append(randomPick)
+            if tableNumber == 6:
+                table6.append(randomPick)
+            classList.remove(randomPick)
+            tableNumber = tableNumber + 1
+            if tableNumber == 7:
+                tableNumber = 1
+        
+    elif sizeChoice == 4:
+        table1=[]
+        table2=[]
+        table3=[]
+        table4=[]
+        table5=[]
+        
+        while len(classList) > 0:
+            randomPick = random.choice(classList)
+            if tableNumber == 1:
+                table1.append(randomPick)
+            if tableNumber == 2:
+                table2.append(randomPick)
+            if tableNumber == 3:
+                table3.append(randomPick)
+            if tableNumber == 4:
+                table4.append(randomPick)
+            if tableNumber == 5:
+                table5.append(randomPick)
+            classList.remove(randomPick)
+            tableNumber = tableNumber + 1
+            if tableNumber == 6:
+                tableNumber = 1
 
-# Prints program name, classList, and asks if any exceptions should be taken into account.
+# Prints program name, assings values to classList, asks how many students should be in each group, and asks if any exceptions should be taken into account.
 print('Group Maker 3000')
 print("What are the names of the students in this class? (Type every student's name, then press Enter)")
 
@@ -57,7 +141,6 @@ print("The students in this class are: ", classList)
 
 print("How many students should be in each group? (2, 3, or 4)")
 sizeChoice == input()
-groupSize()
 
 # Exceptions (two students cannot be in the same table together)
 print("Is there an exception? (Y/N)")
@@ -68,31 +151,5 @@ if exception == "Y" or exception == "y":
 if exception == "N" or exception == "n":
   print("No exceptions")
 
-randomPick = []
 # Randomly assigns student names to tables, removes assigned names until all names are assigned.
-while len(classList) > 0:
-  randomPick = random.choice(classList)
-  if tableNumber == 1:
-    table1.append(randomPick)
-  if tableNumber == 2:
-    table2.append(randomPick)
-  if tableNumber == 3:
-    table3.append(randomPick)
-  if tableNumber == 4:
-    table4.append(randomPick)
-  if tableNumber == 5:
-    table5.append(randomPick)
-  if tableNumber == 6:
-    table6.append(randomPick)
-  classList.remove(randomPick)
-  tableNumber = tableNumber + 1
-  if tableNumber == 7:
-    tableNumber = 1
-
-# Prints the tables
-print("Table 1: ", table1)
-print("Table 2: ", table2)
-print("Table 3: ", table3)
-print("Table 4: ", table4)
-print("Table 5: ", table5)
-print("Table 6: ", table6)
+groupSize()
